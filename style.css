@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gaegu', sans-serif;
+  background: radial-gradient(circle at center, #39171F, #1A1214);
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+
+.content-container {
+  margin: 20px;
+  color: white;
+  padding-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* Add margin-right for better centering on mobile */
+  margin-top: 10%;
+  font-size: 26px;
+}
+
+.content-container h1 {
+  opacity: 0;
+  animation: fadeBounceAnimation 1s ease-in-out forwards;
+  font-size: 60px;
+}
+
+@keyframes fadeBounceAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional styles for mobile devices */
+@media only screen and (max-width: 768px) {
+  .content-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    /* Adjust margins for better centering on smaller screens */
+  }
+
+  .lalagyan-ulit {
+    margin-top: -150px;
+    margin-left: 5%;
+  }
+
+  .box {
+    width: 150px;
+    margin: -10px;
+    border-radius: 30px;
+  }
+
+  .box:nth-child(odd),
+  .box:nth-child(even) {
+    height: 300px;
+    transform: translateY(0);
+  }
+}
+
+
+.z1 {
+  text-align: center; /* Change to center alignment */
+  margin-top: 5%; /* Keep margin-top */
+}
+
+.bt1 {
+  margin-top: 20px; /* Adjust margin-top to create space between the elements */
+  font-family: 'Gaegu', sans-serif;
+  display: block; /* Change to block display */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  padding: 10px 30px;
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bt1:hover {
+  background-color: #ff4d4d;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Gaegu', sans-serif;
+}
+
+h3 {
+  color: white;
+  font-family: 'Gaegu', sans-serif;
+}
+
+p {
+  color: white;
+  font-family: 'Gaegu', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(68, 68, 68, 0.1);
+  padding: 0.5em;
+}
+
+.logo {
+  margin-right: 2em;
+  height: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 0.6em;
+  margin: 0 1em;
+  position: relative;
+  font-family: 'Gaegu', cursive;
+  transition: color 0.3s ease-in-out;
+  /* Add a transition effect for text color */
+  background-color: transparent;
+  /* Set the initial background color to be transparent */
+}
+
+nav a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -1em;
+  top: 25%;
+  bottom: 25%;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav a:hover {
+  background-color: transparent;
+  color: #ff4d4d;
+  /* Pinkish-red text color on hover */
+}
+
+.lalagyan {
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 20px;
+}
+
+.bd {
+  font-family: 'Gaegu', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: 20%;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  flex: 0 0 calc(50% - 20px); /* Adjusted to 50% width */
+  margin: 10px;
+  position: relative;
+}
+
+img {
+  max-width: 40%; /* Increased from 50% to make the images larger */
+  height: auto;
+  border: none;
+  border-radius: 5px;
+  display: block;
+}
+
+.image-caption {
+  width: 40%; /* Increased from 50% to match the image width */
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background: linear-gradient(to top, #39171F, #1A1214);
+  text-align: center;
+  font-size: 18px; /* Increased font size */
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper:hover .image-caption {
+  opacity: 1;
+}
+
+
+.z2 {
+  text-align: center;
+  font-size: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.lalagyan-ulit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -300px;
+  /* Adjust the margin-top value to move the content higher */
+  margin-left: 40%;
+}
+
+.box {
+  width: 200px;
+  margin: -15px;
+  background-color: rgba(113, 44, 61, 0.51);
+  opacity: 0.5;
+  border-radius: 40px;
+  transition: transform 0.6s ease-in-out;
+  /* Add a transition effect for transform */
+}
+
+.box:nth-child(odd) {
+  height: 440px;
+  /* Set the height for odd-numbered boxes */
+  transform: translateY(20px);
+  /* Adjust the vertical position for odd boxes */
+}
+
+.box:nth-child(even) {
+  height: 440px;
+  /* Set the height for even-numbered boxes */
+  transform: translateY(-20px);
+  /* Adjust the vertical position for even boxes */
+}
+
+.video-container {
+  position: absolute;
+  top: 20%;
+  right: 8%;
+  width: 770px; /* Adjust the width to make the video larger */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .video-container {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+/* Additional styles for mobile devices */
+@media only screen and (max-width: 768px) {
+  .content-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    /* Adjust margins for better centering on smaller screens */
+  }
+
+  .lalagyan-ulit {
+    margin-top: -150px;
+    margin-left: 5%;
+  }
+
+  .box {
+    width: 150px;
+    margin: -10px;
+    border-radius: 30px;
+  }
+
+  .box:nth-child(odd),
+  .box:nth-child(even) {
+    height: 300px;
+    transform: translateY(0);
+  }
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.plan {
+  background-color: rgba(113, 44, 61, 0.8);
+  color: white;
+  border-radius: 10px;
+  margin: 0 1em;
+  padding: 1em;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.plan p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.plan ul li {
+  margin: 0.5em 0;
+}
+
+.plan button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.plan button:hover {
+  background-color: #ff4d4d;
+}
+
+
+/* Payment Popup Styles */
+.payment-popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.payment-popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Adjustments for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+  .payment-popup-content {
+    width: 90%;
+  }
+}
